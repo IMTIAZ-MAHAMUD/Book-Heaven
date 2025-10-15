@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BookHive — Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Top navigation (shared across pages) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">BookHive</a>
+      <nav class="main-nav">
+        <a href="genres.html">Genres</a>
+        <a href="index.html#featured">Featured</a>
+        <a href="login.html" class="btn btn-outline">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Discover & share your next favourite book</h1>
+          <p>Community reviews, recommendations, and a simple storefront layout for class demonstration.</p>
+          <div class="hero-actions">
+            <a href="genres.html" class="btn">Browse Genres</a>
+            <a href="login.html" class="btn">Join the community</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <!-- placeholder image - replace with local asset if desired -->
+          <img src="https://picsum.photos/seed/books/480/320" alt="Books community">
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured books (populated with JS from sample data) -->
+    <section id="featured" class="container section">
+      <h2>Featured books</h2>
+      <div id="featured-list" class="card-grid">
+        <!-- JS will inject cards here -->
+      </div>
+    </section>
+
+    <!-- Testimonials / community area -->
+    <section class="container section">
+      <h2>Community Picks</h2>
+      <div class="grid-3">
+        <article class="card small">
+          <h3>Student pick</h3>
+          <p>Short note: "Loved the character development!"</p>
+        </article>
+        <article class="card small">
+          <h3>Instructor pick</h3>
+          <p>"Great for project demos—simple structure and design."</p>
+        </article>
+        <article class="card small">
+          <h3>Editor's pick</h3>
+          <p>"Crisp UI, easy to extend with PHP & DB later."</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© BookHive — Demo project for class. Backend not implemented yet.</small>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
+
+

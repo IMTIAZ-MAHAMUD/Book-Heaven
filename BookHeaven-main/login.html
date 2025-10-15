@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BookHive — Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">BookHive</a>
+      <nav class="main-nav">
+        <a href="genres.html">Genres</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container section auth-grid">
+    <section class="card">
+      <h2>Login</h2>
+      <!-- Later: set action="login.php" and method="POST" -->
+      <form id="login-form" onsubmit="event.preventDefault(); alert('Login POST to server later')">
+        <label>Email
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>Password
+          <input type="password" name="password" required>
+        </label>
+        <button class="btn" type="submit">Login</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Register</h2>
+      <!-- Later: set action="register.php" method="POST" -->
+      <form id="register-form" onsubmit="event.preventDefault(); alert('Register POST to server later')">
+        <label>Name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Password
+          <input type="password" name="password" required>
+        </label>
+        <button class="btn btn-outline" type="submit">Register</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><small>© BookHive — Demo</small></div>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
+
